@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economic Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculator</h1>
+        <form id="calculator-form">
+            <select id="operation" onchange="showFields()">
+                <option value="">Select an operation</option>
+                <option value="q1">Future Value (Q1)</option>
+                <option value="q2">Present Value (Q2)</option>
+                <option value="q3">Present Value Drop (Q3)</option>
+                <option value="q4">Real GDP (Q4)</option>
+                <option value="q5">GDP Calculation (Q5)</option>
+                <option value="aggregateModel">Aggregate Model</option>
+                <option value="interestRateParity">Interest Rate Parity</option>
+                <option value="q6">Simple Annual Compounding (Q6)</option>
+            </select>
+
+            <div id="input-fields"></div>
+
+            <button type="button" onclick="calculate()">Calculate</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
